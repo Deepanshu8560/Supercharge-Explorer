@@ -1,0 +1,32 @@
+- Generating browser application bundles (phase: setup)...
+✔ Browser application bundle generation complete.
+✔ Browser application bundle generation complete.
+
+Warning: D:\Supercharge\src\app\shared\components\map-view\map-view.component.ts depends on 'leaflet'. CommonJS or AMD dependencies can cause optimization bailouts.
+For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+
+
+
+Error: src/app/features/map/components/filter-panel/filter-panel.component.html:21:74 - error TS2339: Property 'food' does not exist on type '{ coffee: boolean; restroom: boolean; wifi: boolean; shopping: boolean; dining: boolean; }'.
+
+21             <label><input type="checkbox" [(ngModel)]="filters.amenities.food" (change)="onFilterChange()"> Food</label>
+                                                                            ~~~~
+
+  src/app/features/map/components/filter-panel/filter-panel.component.ts:5:18
+    5     templateUrl: './filter-panel.component.html',
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component FilterPanelComponent.
+
+
+Error: src/app/features/map/components/filter-panel/filter-panel.component.html:21:74 - error TS2339: Property 'food' does not exist on type '{ coffee: boolean; restroom: boolean; wifi: boolean; shopping: boolean; dining: boolean; }'.
+
+21             <label><input type="checkbox" [(ngModel)]="filters.amenities.food" (change)="onFilterChange()"> Food</label>
+                                                                            ~~~~
+
+  src/app/features/map/components/filter-panel/filter-panel.component.ts:5:18
+    5     templateUrl: './filter-panel.component.html',
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component FilterPanelComponent.
+
+
+

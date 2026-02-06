@@ -1,0 +1,75 @@
+.route-summary {
+    background: var(--panel-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    color: var(--text-color);
+    margin-top: 1rem;
+
+    h3 {
+        margin-top: 0;
+        color: var(--primary-color);
+    }
+
+    .stats {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #444;
+
+        .stat-item {
+            text-align: center;
+
+            .label {
+                display: block;
+                font-size: 0.8rem;
+                color: #aaa;
+            }
+
+            .value {
+                font-size: 1.2rem;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .timeline {
+        position: relative;
+        padding-left: 1rem;
+        border-left: 2px solid #444;
+        margin-left: 0.5rem;
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+
+            .dot {
+                position: absolute;
+                left: -1.35rem;
+                /* Center on line */
+                width: 12px;
+                height: 12px;
+                background: #fff;
+                border-radius: 50%;
+                border: 2px solid var(--secondary-color);
+
+                &.charge {
+                    background: var(--primary-color);
+                }
+            }
+
+            .content {
+                strong {
+                    display: block;
+                    color: #fff;
+                }
+
+                .details {
+                    font-size: 0.9rem;
+                    color: #aaa;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+<div class="filter-panel">
+    <h3>Filters</h3>
+
+    <div class="filter-group">
+        <label>Minimum Power (kW)</label>
+        <select [(ngModel)]="filters.minPower" (change)="onFilterChange()">
+            <option [value]="0">Any</option>
+            <option [value]="72">72kW+</option>
+            <option [value]="150">150kW+</option>
+            <option [value]="250">250kW+</option>
+        </select>
+    </div>
+
+    <div class="filter-group">
+        <label>Amenities</label>
+        <div class="checkbox-group">
+            <label><input type="checkbox" [(ngModel)]="filters.amenities.coffee" (change)="onFilterChange()">
+                Coffee</label>
+            <label><input type="checkbox" [(ngModel)]="filters.amenities.restroom" (change)="onFilterChange()">
+                Restroom</label>
+            <label><input type="checkbox" [(ngModel)]="filters.amenities.dining" (change)="onFilterChange()">
+                Food/Dining</label>
+            <label><input type="checkbox" [(ngModel)]="filters.amenities.wifi" (change)="onFilterChange()"> WiFi</label>
+        </div>
+    </div>
+
+    <div class="filter-group">
+        <label><input type="checkbox" [(ngModel)]="filters.onlyAvailable" (change)="onFilterChange()"> Show Only
+            Available</label>
+    </div>
+</div>

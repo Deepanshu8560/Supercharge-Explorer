@@ -1,0 +1,39 @@
+<div class="route-summary" *ngIf="trip">
+    <h3>Trip Summary</h3>
+
+    <div class="stats">
+        <div class="stat-item">
+            <span class="label">Distance</span>
+            <span class="value">{{ trip.totalDistance }} km</span>
+        </div>
+        <div class="stat-item">
+            <span class="label">Duration</span>
+            <span class="value">{{ trip.totalDuration }} min</span>
+        </div>
+        <div class="stat-item">
+            <span class="label">Stops</span>
+            <span class="value">{{ trip.stops.length }}</span>
+        </div>
+    </div>
+
+    <div class="timeline">
+        <div class="timeline-item origin">
+            <div class="dot"></div>
+            <div class="content">Start: {{ trip.origin.lat.toFixed(2) }}, {{ trip.origin.lng.toFixed(2) }}</div>
+        </div>
+
+        <div class="timeline-item stop" *ngFor="let stop of trip.stops">
+            <div class="dot charge"></div>
+            <div class="content">
+                <strong>{{ stop.stationName }}</strong>
+                <div class="details">Charge {{ stop.durationMinutes }} min to {{ stop.targetCharge }}%</div>
+            </div>
+        </div>
+
+        <div class="timeline-item dest">
+            <div class="dot"></div>
+            <div class="content">Destination: {{ trip.destination.lat.toFixed(2) }}, {{ trip.destination.lng.toFixed(2)
+                }}</div>
+        </div>
+    </div>
+</div>

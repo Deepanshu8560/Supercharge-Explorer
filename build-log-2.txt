@@ -1,0 +1,30 @@
+- Generating browser application bundles (phase: setup)...
+✔ Browser application bundle generation complete.
+✔ Browser application bundle generation complete.
+- Copying assets...
+✔ Copying assets complete.
+- Generating index html...
+✔ Index html generation complete.
+- Generating service worker...
+✔ Service worker generation complete.
+
+Initial Chunk Files                                                                      | Names                     |  Raw Size
+vendor.js                                                                                | vendor                    |   2.37 MB |
+polyfills.js                                                                             | polyfills                 | 104.17 kB |
+main.js                                                                                  | main                      |  19.32 kB |
+styles.css                                                                               | styles                    |  15.44 kB |
+runtime.js                                                                               | runtime                   |  12.49 kB |
+
+| Initial Total             |   2.52 MB
+
+Lazy Chunk Files                                                                         | Names                     |  Raw Size
+default-src_app_shared_shared_module_ts-node_modules_angular_forms_fesm2022_forms_mjs.js | features-map-map-module   | 749.93 kB |
+src_app_features_trip_trip_module_ts.js                                                  | features-trip-trip-module |  35.77 kB |
+src_app_features_map_map_module_ts.js                                                    | features-map-map-module   |  24.87 kB |
+
+Build at: 2026-02-06T06:30:52.421Z - Hash: e8edf56f2fd57389 - Time: 3893ms
+
+Warning: D:\Supercharge\src\app\shared\components\map-view\map-view.component.ts depends on 'leaflet'. CommonJS or AMD dependencies can cause optimization bailouts.
+For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+
+

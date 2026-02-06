@@ -1,0 +1,25 @@
+<form [formGroup]="tripForm" (ngSubmit)="onSubmit()" class="trip-form">
+    <h3>Plan Your Trip</h3>
+
+    <div class="form-group">
+        <label>Origin</label>
+        <input type="text" formControlName="origin" placeholder="e.g. San Francisco">
+    </div>
+
+    <div class="form-group">
+        <label>Destination</label>
+        <input type="text" formControlName="destination" placeholder="e.g. Los Angeles">
+    </div>
+
+    <div class="form-group">
+        <label>Vehicle Model</label>
+        <select formControlName="vehicleModel">
+            <option value="Model S">Model S</option>
+            <option value="Model 3">Model 3</option>
+            <option value="Model X">Model X</option>
+            <option value="Model Y">Model Y</option>
+        </select>
+    </div>
+
+    <button type="submit" [disabled]="!tripForm.valid">Plan Route</button>
+</form>

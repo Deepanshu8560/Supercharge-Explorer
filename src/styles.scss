@@ -1,0 +1,35 @@
+/* Global Styles */
+@import 'leaflet/dist/leaflet.css';
+
+:root {
+  --primary-color: #e82127; /* Tesla Red-ish */
+  --secondary-color: #222;
+  --background-color: #111;
+  --text-color: #eee;
+  --panel-bg: rgba(30, 30, 30, 0.9);
+  --font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  overflow: hidden; /* App-like feel */
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
