@@ -26,6 +26,10 @@ L.Marker.prototype.options.icon = iconDefault;
       width: 100%;
       height: 100%;
       min-height: 400px;
+      /* Hardware acceleration hints */
+      transform: translate3d(0,0,0);
+      will-change: transform;
+      background: #111; /* Avoid white flash on load */
     }
   `]
 })
